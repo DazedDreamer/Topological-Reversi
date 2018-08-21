@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="reversi.css">
+        <title>Reversi</title>
+    </head>
+    <body>
+        <div id="playground">
+        </div>
+        <button class="reset" onclick="reversi.reset()">RESET</button>
+        <button class="toggle" onclick="reversi.toggle()">TOGGLE</button>
+    </body>
+    <script src="reversi.js"></script>
+    <script> 
+        window.onload = function() {
+            
+            reversi.init('playground');
+        };
+    </script>
+</html>
